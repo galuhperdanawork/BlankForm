@@ -12,29 +12,47 @@
         android:id="@+id/textHeader"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Daftar Buah"
+        android:text="Contact Us"
         android:textAlignment="center"
-        android:textSize="24sp"
+        android:textSize="26sp"
         android:textStyle="bold"
         android:gravity="center"
-        android:layout_gravity="center_horizontal"/>
+        />
+
+    <TextView
+        android:id="@+id/textDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="We will response you as soon as possible"
+        android:textAlignment="center"
+        android:textSize="10sp"
+        android:textStyle="bold"
+    />
 
     <EditText
-        android:id="@+id/editTextBuah"
-        android:hint="Masukkan nama buah"
+        android:id="@+id/editEmail"
+        android:hint="Masukkan Email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/editMessage"
+        android:hint="Tulis Pesan Anda"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
     <Button
-        android:id="@+id/btnTambah"
-        android:text="Tambah"
-        android:layout_width="wrap_content"
+        android:id="@+id/btnSendMessage"
+        android:text="Send Message"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"/>
+        android:layout_gravity="center_horizontal"
+        android:background="#333333"
+        android:textColor="#FFFFFF"/>
 
     <!-- RecyclerView -->
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerViewBuah"
+        android:id="@+id/recyclerViewMessage"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
@@ -46,7 +64,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingTop="8dp"
-        android:text="Aplikasi Buah Sederhana"
+        android:text="Copyright @2025"
         android:textAlignment="center"
         android:layout_gravity="center_horizontal"/>
 
